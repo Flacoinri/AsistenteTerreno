@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛠️ Registro Técnico"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- DETALLE RECIBIDO POR PUT. EXTRA -->
+        <TextView
+            android:id="@+id/tvDetalleOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esperando orden de trabajo..."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- VISOR DE FOTO -->
+        <ImageView
+            android:id="@+id/imgFotoEvidencia"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#E0E0E0"
+            android:contentDescription="Evidencia fotográfica"
+            android:layout_marginBottom="15dp" />
+
+        <!-- INTENT IMPLÍCITO 1: CÁMARA -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📸 Capturar Evidencia"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+
+        <!-- INTENT IMPLÍCITO 2: MAPA -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗺️️ Ver Faena en Mapa"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+
+        <!-- INTENT IMPLÍCITO 3: LLAMADA -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLlamar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 Llamar a Central"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+
+        <!-- INTENT IMPLÍCITO 4: CORREO -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✉️ Enviar Reporte por Correo"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+
+        <!-- INTENT IMPLÍCITO 5: AJUSTES WI-FI -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📶 Ajustes de Red Wi-Fi"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+
+        <!-- BOTÓN VOLVER -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔙 Volver"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

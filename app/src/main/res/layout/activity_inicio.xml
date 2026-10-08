@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Asistente"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="18dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSegundaVista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛠️ Registro Técnico"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDetalleTecnico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Detalle Tecnico"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:textColor="@color/white" />
+
+    <!-- LINTERNA -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLinterna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔦 Encender Linterna"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAyuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="❓ Guia y Ayuda"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Configuracion"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:textColor="@color/white" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
