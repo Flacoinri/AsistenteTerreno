@@ -11,15 +11,38 @@
     <!-- Permite obtener una ubicación aproximada basada en antenas de telefonía o redes WiFi. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <!-- Define si existe la camara con flash en un dispositivo -->
+    <!-- Define si existe la cámara con flash en un dispositivo -->
     <uses-feature
         android:name="android.hardware.camera.flash"
         android:required="false" />
 
-    <!-- Define si existe la camara en un dispositivo -->
+    <!-- Define si existe la cámara en un dispositivo -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+
+    <!-- Declaración de consultas (Package Visibility) para Intents Implícitos en Android 11+ (API 30+) -->
+    <queries>
+        <!-- Cámara -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Marcador telefónico -->
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+        <!-- Cliente de correo electrónico -->
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="mailto" />
+        </intent>
+        <!-- Mapas y geolocalización -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -30,18 +53,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AsistenteTerreno">
+
+        <!-- Actividad Principal (Launcher) -->
         <activity
             android:name=".Inicio"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla de Registro Técnico y Evidencia -->
         <activity
             android:name=".SegundaVista"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pantalla de Guía y Ayuda -->
         <activity
             android:name=".AyudaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pantalla de Configuración y Sincronización en segundo plano -->
         <activity
             android:name=".ConfigActivity"
             android:exported="false"
