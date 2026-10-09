@@ -1,84 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="15dp">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Asistente"
-        android:textStyle="bold"
-        android:textSize="36sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="18dp"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSegundaVista"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="🛠️ Registro Técnico"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:background="@color/black"
-        android:textColor="@color/white"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDetalleTecnico"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="📋 Detalle Tecnico"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:background="@color/black"
-        android:textColor="@color/white" />
+        <!-- TÍTULO PRINCIPAL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Asistente"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
 
-    <!-- LINTERNA -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLinterna"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🔦 Encender Linterna"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:background="@color/black"
-        android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panel de Control y Operaciones"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="28dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAyuda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="❓ Guia y Ayuda"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:background="@color/black"
-        android:textColor="@color/white" />
+        <!-- BOTÓN 1: REGISTRO TÉCNICO (SEGUNDA VISTA) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSegundaVista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛠️ Registro Técnico"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:padding="14dp"
+            android:background="@color/btn_background"
+            android:textColor="@color/btn_text" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnConfiguracion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="⚙️ Configuracion"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:background="@color/black"
-        android:textColor="@color/white" />
+        <!-- BOTÓN 2: CONTROL DE HARDWARE (LINTERNA) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLinterna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔦 Encender Linterna"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:padding="14dp"
+            android:background="@color/btn_background"
+            android:textColor="@color/btn_text" />
 
+        <!-- BOTÓN 3: GUÍA Y AYUDA -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAyuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❓ Guía y Ayuda"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:padding="14dp"
+            android:background="@color/btn_background"
+            android:textColor="@color/btn_text" />
 
+        <!-- BOTÓN 4: CONFIGURACIÓN -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConfiguracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Configuración"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:padding="14dp"
+            android:background="@color/btn_background"
+            android:textColor="@color/btn_text" />
 
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores para botones y textos adaptativos (Modo Oscuro) -->
+    <color name="btn_background">#37474F</color>
+    <color name="btn_text">#FFFFFF</color>
+    <color name="text_secondary">#B0BEC5</color>
+</resources>

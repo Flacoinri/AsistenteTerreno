@@ -1,10 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AyudaActivity">
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="❓ Guía del Asistente"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preguntas Frecuentes y Soporte Operacional"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- FAQ 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Cómo registrar evidencias técnicas?"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acceda a 'Registro Técnico' desde el menú principal. La orden de trabajo se cargará automáticamente. Presione 'Capturar Evidencia' para solicitar el permiso de cámara nativa y tomar la fotografía de respaldo."
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="14dp" />
+
+        <!-- FAQ 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. ¿Cómo contactar a la central o revisar el mapa?"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En la pantalla de Registro Técnico dispone de botones directos para abrir su aplicación de mapas GPS, discar a la central técnica o redactar un correo con el informe."
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="14dp" />
+
+        <!-- FAQ 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. ¿Cómo alternar Modo Oscuro o sincronizar datos?"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diríjase a 'Configuración' donde podrá cambiar libremente entre Modo Claro y Oscuro, además de presionar 'Sincronizar Datos con Servidor' para respaldar la información en segundo plano."
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="24dp" />
+
+        <!-- BOTÓN VOLVER -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVolverAyuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔙 Volver al Inicio"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/btn_background"
+            android:textColor="@color/btn_text" />
+
+    </LinearLayout>
+</ScrollView>

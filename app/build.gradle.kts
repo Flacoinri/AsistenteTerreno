@@ -4,14 +4,12 @@ plugins {
 
 android {
     namespace = "com.st.asistenteterreno"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.st.asistenteterreno"
-        minSdk = 31
-        targetSdk = 37
+        minSdk = 24
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
